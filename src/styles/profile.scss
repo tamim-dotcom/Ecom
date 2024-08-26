@@ -1,0 +1,72 @@
+@import "color";
+
+.profile{
+    background-color: $pink;
+    width: 100%;
+    height: 100vh;
+
+    >main{
+        height: 100%;
+        max-width: 900px;
+        width: 50%;
+        background-color: white;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 4rem;
+        align-items: center;
+
+        >img{
+            height: 15rem;
+            width: 15rem;
+            border-radius: 100%;
+            box-shadow: 0 0 10px rgba($color: #000000, $alpha:0.146);
+            margin: 4rem;
+
+        }
+        >h5{
+            font-size: 2rem;
+
+        }
+        >div{
+            margin: 1rem;
+
+            >a{
+                background-color: $red;
+                color: white;
+                padding: 0.7rem 1.5rem;
+                font-size: 1rem;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+
+                &:hover{
+                    background-color: $reddark;
+                }
+
+                >svg{
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+        >button{
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 0.7rem 1rem;
+            border-radius: 5px;
+            font-weight: 500;
+            font-size: 1rem;
+
+            &:hover{
+                background-color: rgba(245,245,245,0.864);
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    
+}
